@@ -1,0 +1,20 @@
+.note {
+    margin-top: 5px;
+    font-size: 13px;
+}
+
+/* start d3 */
+
+.axis-left {
+    font-size: 10px;
+}
+
+.axis-bottom {
+    font-size: 10px;
+}
+
+.y-axis {
+    font-size: 10px;
+}
+
+/* end d3 */

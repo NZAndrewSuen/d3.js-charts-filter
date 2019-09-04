@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.grey-background {
+    background-color: #f3f3f3;
+}
+
+.main-content {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+.iframe-main-content {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-active {
+    background-color: #1f77b4;
+}
+
+.filter-bar {
+    margin-bottom: 30px;
+}
+
+.select2-results__options {
+    font-size: 12px !important;
+}
+
+/* filter */
+#btn-export-csv {
+    width: 70px;
+    font-size: 15px !important;
+    border: none;
+    border-radius: 5px;
+    background-color: #2ca02c;
+    color: white;
+    cursor: pointer;
+}
+
+.left-filter {
+    float: left;
+    width: 920px;
+}
+
+.middle-filter {
+    float: left;
+    width: 270px;
+    margin: -5px 0 0 20px;
+}
+
+.right-filter {
+    margin-left: 20px;
+    float: left;
+    width: 80px;
+}
+
+#amount {
+    color: #ff7f0e;
+    font-weight: bold;
+}

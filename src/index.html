@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ANZ Championship Visualization</title>
+    <link rel="shortcut icon" type="image/png" href="assets/img/logo.png" />
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/team.css">
+
+    <!-- jquery -->
+    <script src="js/lib/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="js/lib/jquery-ui-1.12.1/jquery-ui.css">
+    <script src="js/lib/jquery-ui-1.12.1/jquery-ui.js"></script>
+
+    <!-- select2 -->
+    <link href="js/lib/select2/select2.min.css" rel="stylesheet" />
+    <script src="js/lib/select2/select2.min.js"></script>
+
+    <!-- d3 -->
+    <script src="js/lib/d3/d3.v4.js"></script>
+
+    <!-- data -->
+    <script src="data/full-data.js"></script>
+    <script src="data/country-data.js"></script>
+    <script src="js/services/data-service.js"></script>
+    <script src="js/services/country-data-service.js"></script>
+    <script src="js/services/common-service.js"></script>
+
+    <!-- page script -->
+    <script src="js/pages/team.js"></script>
+</head>
+
+<body class="grey-background">
+    <div class="main-content">
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Team Performance</a></li>
+                <li><a href="#tabs-2">Home Court Performance</a></li>
+            </ul>
+            <div id="tabs-1">
+                <div class="filter-bar">
+                    <div class="left-filter">
+                        <select id="cbo-country">
+                            <option value="-1">All countries</option>
+                        </select>
+                        <select id="cbo-teams" multiple="multiple"></select> |
+                        Part: <select id="cbo-part"></select> |
+                    </div>
+                    <div class="middle-filter">
+                        <label for="amount">Seasons:</label>
+                        <span id="amount"></span>
+                        <div id="slider-range"></div>
+                        <div class="note">Set the range to 1 season will show how teams ranked at specific parts of a season.</div>
+                    </div>
+                    <div style="clear: both;"></div>
+                    </div>
+                    <div id="d3-performance"></div>
+                    </div>
+
+            <div id="tabs-2">
+                <iframe src="homecourt.html" frameborder="0" scrolling="no" width="100%" height="700" ></iframe>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
